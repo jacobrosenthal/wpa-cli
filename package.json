@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ws-cp": "DEBUG=* node ./node_modules/child-process-ws/ChildProcess-server.js"
   },
   "author": "Jacob Rosenthal",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "child-process-ws": "jacobrosenthal/child-process-ws#exec"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  }
 }
